@@ -1,0 +1,15 @@
+{
+  "name": "my-openode-example",
+  "version": "1.0.0",
+  "description": "This app rocks :].",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: I don't have any test yet :-[\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "openode"
+  ],
+  "author": "homer-beer",
+  "license": "MIT"
+}
