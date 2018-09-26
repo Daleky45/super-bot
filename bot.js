@@ -48,7 +48,7 @@ client.on('message', msg => {
     msg.reply("Tiens, en voilà plein :cookie: :cookie: :cookie:");
   }
   if (msg.content === 'Help') {
-    message.channel.send({embed: {
+    msg.channel.send({embed: {
     color: 3447003,
     author: {
       name: client.user.username,
