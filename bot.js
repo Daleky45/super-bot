@@ -52,7 +52,7 @@ client.on('message', msg => {
   }
   if (msg.content.includes('Licorne') & msg.author.id != '427960412840132628') {
     msg.reply("Voici une licorne :)", {
-    file: "candidat-licorne.png" // Or replace with FileOptions object
+    file: "Licorne.png" // Or replace with FileOptions object
 });
   }
 
