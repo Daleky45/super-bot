@@ -17,6 +17,6 @@
     "opusscript": "0.0.6",
     "node-opus": "0.3.0",
     "ffmpeg": "0.0.4",
-    "request": "2.81.0"
+    "request": "2.81.0" 
   }
 }
