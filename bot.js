@@ -48,7 +48,37 @@ client.on('message', msg => {
     msg.reply("Tiens, en voilà plein :cookie: :cookie: :cookie:");
   }
   if (msg.content === 'Help') {
-    msg.channel.send("\n##################\n    Les commandes sont :\n##################\n\nClear 'nombre messages'\nTabarnak\nPing\nCookies\nCookies s'il te plait\nLicorne\nJe t'aime\nCoucou\nDiscussion\nChanger 'New pseudo'\nPatrick\nCarlo\nJoue_à 'New_jeu'/nStatuts\n\nA utiliser avec modération !");
+    message.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    description: "Voci une page pour ne pas devoir retenir toutes les commandes.",
+    fields: [{
+        name: "Lire une musique YouTube",
+        value: "Play <lien youtube>"
+      },
+      {
+        name: "Afficher une jolie licorne",
+        value: "Licorne"
+      },
+      {
+        name: "Afficher votre ping",
+        value: "Ping"
+      },
+      {
+        name: "Discuter un privé avec moi",
+        value: "Discussion"
+      }     
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "© Info"
+    }
+  }
+});
   }
   if (msg.content.includes('Licorne') & msg.author.id != '427960412840132628') {
     msg.reply("Voici une licorne :)", {
